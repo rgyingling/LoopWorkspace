@@ -300,23 +300,29 @@ jobs:
       - name: Fastlane Build & Archive
         run: bundle exec fastlane build_loop
         env:
-          TEAMID: ${{ secrets.TEAMID }}
-          GH_PAT: ${{ secrets.GH_PAT }}
-          FASTLANE_KEY_ID: ${{ secrets.FASTLANE_KEY_ID }}
-          FASTLANE_ISSUER_ID: ${{ secrets.FASTLANE_ISSUER_ID }}
-          FASTLANE_KEY: ${{ secrets.FASTLANE_KEY }}
-          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+          TEAMID: ${{ secrets.3H3MTVA8G3 }}
+          GH_PAT: ${{ secrets.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}}
+          FASTLANE_KEY_ID: ${{ secrets.246756C499 }}
+          FASTLANE_ISSUER_ID: ${{ secrets.4d37839e-12f3-4841-b56d-e908105ad321 }}
+          FASTLANE_KEY: ${{ secrets.MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgOFo2uN7DelJxIDZ7
+wfJauiwFxuppbJqxCRgaKCehbXCgCgYIKoZIzj0DAQehRANCAASbBQV/mnA4nQTE
+Na9ZOJ9tZrKGlZHfSLg9FffrSNQ33228ernyGg7e9LdOEWiNF4IS+Sd67dRWUeHr
+3LzNVmto }}
+          MATCH_PASSWORD: ${{ secrets.RylieGrace2019 }}
 
       # Upload to TestFlight
       - name: Fastlane upload to TestFlight
         run: bundle exec fastlane release
         env:
-          TEAMID: ${{ secrets.TEAMID }}
-          GH_PAT: ${{ secrets.GH_PAT }}
-          FASTLANE_KEY_ID: ${{ secrets.FASTLANE_KEY_ID }}
-          FASTLANE_ISSUER_ID: ${{ secrets.FASTLANE_ISSUER_ID }}
-          FASTLANE_KEY: ${{ secrets.FASTLANE_KEY }}
-          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+          TEAMID: ${{ secrets.3H3MTVA8G3}}
+          GH_PAT: ${{ secrets.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 }}
+          FASTLANE_KEY_ID: ${{ secrets.246756C499 }}
+          FASTLANE_ISSUER_ID: ${{ secrets.4d37839e-12f3-4841-b56d-e908105ad321 }}
+          FASTLANE_KEY: ${{ secrets.MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgOFo2uN7DelJxIDZ7
+wfJauiwFxuppbJqxCRgaKCehbXCgCgYIKoZIzj0DAQehRANCAASbBQV/mnA4nQTE
+Na9ZOJ9tZrKGlZHfSLg9FffrSNQ33228ernyGg7e9LdOEWiNF4IS+Sd67dRWUeHr
+3LzNVmto }}
+          MATCH_PASSWORD: ${{ secrets.RylieGrace2019 }}
 
       # Upload Build artifacts
       - name: Upload build log, IPA and Symbol artifacts
